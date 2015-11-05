@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="437.0" prefWidth="500.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UIController">
+    <stylesheets>
+        <URL value="@ui.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="appID" layoutX="3.0" layoutY="135.0" prefHeight="25.0" prefWidth="241.0" styleClass="textField" />
+      <TextField fx:id="accessToken" layoutX="252.0" layoutY="135.0" prefHeight="25.0" prefWidth="241.0" styleClass="textField" />
+      <TextField fx:id="mobileNumber" layoutX="299.0" layoutY="175.0" prefHeight="25.0" prefWidth="192.0" promptText="+(Country-Code)(Mobile-Number)" styleClass="textField" />
+      <TextField fx:id="otp" layoutX="300.0" layoutY="268.0" prefHeight="25.0" prefWidth="192.0" styleClass="textField" />
+      <Button fx:id="submit01" layoutX="51.0" layoutY="218.0" mnemonicParsing="false" onAction="#submitButton" prefHeight="25.0" prefWidth="146.0" styleClass="buttonSubmit" text="Get OTP Missed Call" />
+      <Button fx:id="reset01" layoutX="323.0" layoutY="218.0" mnemonicParsing="false" onAction="#resetButton" prefHeight="25.0" prefWidth="146.0" styleClass="buttonReset" text="Reset" />
+      <Button fx:id="reset02" layoutX="323.0" layoutY="315.0" mnemonicParsing="false" onAction="#resetButton" prefHeight="25.0" prefWidth="146.0" styleClass="buttonReset" text="Reset" />
+      <Button fx:id="submit02" layoutX="51.0" layoutY="315.0" mnemonicParsing="false" onAction="#submitButton" prefHeight="25.0" prefWidth="146.0" styleClass="buttonSubmit" text="Submit OTP" />
+      <Text fill="WHITE" layoutX="458.0" layoutY="27.0" onMouseClicked="#closeButton" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textButton" text="Close" />
+      <Text fill="#66b3da" layoutX="93.0" layoutY="419.0" onMouseClicked="#openWebpage" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textButton" text="For any Query or Contact, Please visit @www.ajitsingh.co.nr" />
+      <Text fx:id="statusText" layoutX="121.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="statusText" text="Mobile Number Verified SuccessFully" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

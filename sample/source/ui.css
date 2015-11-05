@@ -1,0 +1,29 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+-fx-background-image: url(background.jpg);
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
+.textField{
+    -fx-border-radius: 0px;
+    -fx-background-radius:0;   
+}
+Button{
+    -fx-border-style: none;
+    -fx-border-radius: 0px;
+    -fx-background-radius:0;
+    -fx-text-fill: white;
+}
+.buttonSubmit{
+    -fx-background-color: #3333ff;        
+}
+.buttonReset{
+    -fx-background-color: #ff3333;
+}
+.textButton:hover{
+    -fx-text-fill: #00ccff;
+    -fx-underline: true;
+}

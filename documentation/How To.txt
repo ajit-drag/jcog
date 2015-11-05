@@ -1,0 +1,29 @@
+Note : This is temporary documentation of JCOG-Java Cognalys Library !
+Final and more explainatory Documentation will be available soon.
+
+To use JCOG , following steps can be used :
+
+1. Goto Cognalys website ie. https://www.cognalys.com
+2. Register and Create an Web App on cognalys.
+3. Get the App ID and AccessToken from there.
+4. Now in your Java App, follow :
+
+	import org.jcog.jcog;
+	import org.json.JSONException;
+	class verifyMobile{
+	Jcog cog = new Jcog("Your_app_id", "your_access_token");//you can also set appId and accessToken via 
+	//setAppID(String) & setAccessToken(String) methods of Jcog class.
+
+	String getMissedCallStatus = cog.recieveOTP("your_mobile_number_including_country_code");
+	//this is to recieve an otp in the form of missed call on the mobile number to be verified
+
+	String otpVerificationStatus = cog.sendOtp("Complete_Missed_Call_Number");
+	//to send the otp to the server for verification.
+
+5. Both the methods recieveOtp(String) & sendOtp(String) return status from server in the form of String.
+	Note that for verification both reciveOtp() and sendOtp() must be from same instance/object.
+
+
+For any query or suggestion, Feel free to contact me @http://www.ajitsingh.co.nr 
+
+	
