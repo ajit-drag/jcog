@@ -1,3 +1,4 @@
+#JCOG-Documentation
 Note : This is temporary documentation of JCOG-Java Cognalys Library !
 Final and more explainatory Documentation will be available soon.
 
